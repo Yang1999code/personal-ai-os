@@ -1,0 +1,78 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="1050" viewBox="0 0 1600 1050">
+  <defs>
+    <style>
+      .bg { fill: #f8fafc; }
+      .title { font: 700 48px Arial, "PingFang SC", "Microsoft YaHei", sans-serif; fill: #1e293b; }
+      .subtitle { font: 400 24px Arial, "PingFang SC", "Microsoft YaHei", sans-serif; fill: #475569; }
+      .section-title { font: 700 30px Arial, "PingFang SC", "Microsoft YaHei", sans-serif; fill: #0f172a; }
+      .box-title { font: 700 24px Arial, "PingFang SC", "Microsoft YaHei", sans-serif; fill: #0f172a; }
+      .box-text { font: 400 20px Arial, "PingFang SC", "Microsoft YaHei", sans-serif; fill: #334155; }
+      .small { font: 400 17px Arial, "PingFang SC", "Microsoft YaHei", sans-serif; fill: #475569; }
+      .query { fill: #dbeafe; stroke: #2563eb; stroke-width: 2.4; rx: 16; }
+      .read { fill: #dcfce7; stroke: #16a34a; stroke-width: 2.4; rx: 16; }
+      .decide { fill: #fef9c3; stroke: #ca8a04; stroke-width: 2.4; rx: 16; }
+      .write { fill: #ffedd5; stroke: #ea580c; stroke-width: 2.4; rx: 16; }
+      .update { fill: #f3e8ff; stroke: #9333ea; stroke-width: 2.4; rx: 16; }
+      .note { fill: #ffffff; stroke: #cbd5e1; stroke-width: 2; rx: 14; }
+      .arrow { stroke: #64748b; stroke-width: 3; fill: none; marker-end: url(#arrow); }
+      .split { stroke: #94a3b8; stroke-width: 2; stroke-dasharray: 8 8; }
+    </style>
+    <marker id="arrow" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto">
+      <path d="M2,2 L10,6 L2,10 Z" fill="#64748b"/>
+    </marker>
+  </defs>
+
+  <rect class="bg" x="0" y="0" width="1600" height="1050"/>
+
+  <text class="title" x="80" y="90">经验库怎么用、怎么更新</text>
+  <text class="subtitle" x="80" y="130">左边是“查资料”，右边是“新增经验”。两条路最后都会让 wiki 变得更好。</text>
+  <line class="split" x1="800" y1="175" x2="800" y2="850"/>
+
+  <text class="section-title" x="150" y="215">一、查资料时</text>
+
+  <rect class="query" x="110" y="255" width="560" height="85"/>
+  <text class="box-title" x="145" y="290">1. 先打开 index.md</text>
+  <text class="box-text" x="145" y="320">不要乱翻文件，先从总地图找分类。</text>
+
+  <rect class="read" x="110" y="380" width="560" height="85"/>
+  <text class="box-title" x="145" y="415">2. 进入 wiki/分类/index.md</text>
+  <text class="box-text" x="145" y="445">比如 codex、claude-code、daily、vm。</text>
+
+  <rect class="decide" x="110" y="505" width="560" height="95"/>
+  <text class="box-title" x="145" y="540">3. 先读 wiki 结论</text>
+  <text class="box-text" x="145" y="570">有整理页就看快速结论、标准流程、排查清单。</text>
+
+  <rect class="read" x="110" y="645" width="560" height="95"/>
+  <text class="box-title" x="145" y="680">4. 需要细节再回 sources</text>
+  <text class="box-text" x="145" y="710">sources 是原始记录，保留失败过程和证据。</text>
+
+  <path class="arrow" d="M390 340 L390 380"/>
+  <path class="arrow" d="M390 465 L390 505"/>
+  <path class="arrow" d="M390 600 L390 645"/>
+
+  <text class="section-title" x="940" y="215">二、新增经验时</text>
+
+  <rect class="query" x="910" y="255" width="560" height="85"/>
+  <text class="box-title" x="945" y="290">1. 新资料先判断分类</text>
+  <text class="box-text" x="945" y="320">不确定就先放 inbox/，后面再整理。</text>
+
+  <rect class="write" x="910" y="380" width="560" height="95"/>
+  <text class="box-title" x="945" y="415">2. 放到 sources/分类/主题/</text>
+  <text class="box-text" x="945" y="445">source.md、图片、脚本尽量放在一起。</text>
+
+  <rect class="update" x="910" y="520" width="560" height="95"/>
+  <text class="box-title" x="945" y="555">3. 按 templates 提炼 wiki</text>
+  <text class="box-text" x="945" y="585">写适用场景、快速结论、流程和排查清单。</text>
+
+  <rect class="update" x="910" y="660" width="560" height="95"/>
+  <text class="box-title" x="945" y="695">4. 更新索引和 log.md</text>
+  <text class="box-text" x="945" y="725">让下一个人和 Agent 知道发生了什么。</text>
+
+  <path class="arrow" d="M1190 340 L1190 380"/>
+  <path class="arrow" d="M1190 475 L1190 520"/>
+  <path class="arrow" d="M1190 615 L1190 660"/>
+
+  <rect class="note" x="145" y="895" width="1310" height="90"/>
+  <text class="box-text" x="185" y="935">白话规则：</text>
+  <text class="box-text" x="315" y="935">查东西先看地图，写东西先放证据，再把证据提炼成 wiki，最后更新目录和日志。</text>
+</svg>

@@ -1,0 +1,132 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1920" height="1200" viewBox="0 0 1920 1200">
+  <defs>
+    <style>
+      .bg { fill: #f8fafc; }
+      .title { font: 700 48px Arial, "PingFang SC", "Microsoft YaHei", sans-serif; fill: #0f172a; }
+      .subtitle { font: 400 22px Arial, "PingFang SC", "Microsoft YaHei", sans-serif; fill: #475569; }
+      .layer-title { font: 700 25px Arial, "PingFang SC", "Microsoft YaHei", sans-serif; fill: #1e293b; }
+      .box-title { font: 700 22px Arial, "PingFang SC", "Microsoft YaHei", sans-serif; fill: #0f172a; }
+      .box-text { font: 400 18px Arial, "PingFang SC", "Microsoft YaHei", sans-serif; fill: #334155; }
+      .small { font: 400 16px Arial, "PingFang SC", "Microsoft YaHei", sans-serif; fill: #475569; }
+      .tag { font: 700 14px Arial, "PingFang SC", "Microsoft YaHei", sans-serif; fill: #334155; }
+      .layer { fill: #ffffff; stroke: #cbd5e1; stroke-width: 2; rx: 20; }
+      .entry { fill: #dbeafe; stroke: #2563eb; stroke-width: 2.4; rx: 14; }
+      .govern { fill: #ede9fe; stroke: #7c3aed; stroke-width: 2.4; rx: 14; }
+      .asset { fill: #dcfce7; stroke: #16a34a; stroke-width: 2.4; rx: 14; }
+      .wiki { fill: #ffedd5; stroke: #ea580c; stroke-width: 2.4; rx: 14; }
+      .ops { fill: #fef9c3; stroke: #ca8a04; stroke-width: 2.4; rx: 14; }
+      .risk { fill: #fee2e2; stroke: #dc2626; stroke-width: 2.4; rx: 14; }
+      .arrow { stroke: #64748b; stroke-width: 3; fill: none; marker-end: url(#arrow); }
+      .arrow-soft { stroke: #94a3b8; stroke-width: 2.5; fill: none; marker-end: url(#arrow-soft); stroke-dasharray: 8 6; }
+      .note { fill: #ffffff; stroke: #cbd5e1; stroke-width: 2; rx: 14; }
+      .divider { stroke: #e2e8f0; stroke-width: 2; }
+    </style>
+    <marker id="arrow" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto">
+      <path d="M2,2 L10,6 L2,10 Z" fill="#64748b"/>
+    </marker>
+    <marker id="arrow-soft" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto">
+      <path d="M2,2 L10,6 L2,10 Z" fill="#94a3b8"/>
+    </marker>
+  </defs>
+
+  <rect class="bg" x="0" y="0" width="1920" height="1200"/>
+
+  <text class="title" x="80" y="82">ycl 日常经验库专业架构图</text>
+  <text class="subtitle" x="80" y="118">面向协作说明：展示入口、治理规则、原始资料、Wiki 知识层、维护闭环与敏感信息边界。</text>
+
+  <rect class="layer" x="70" y="165" width="1780" height="150"/>
+  <text class="layer-title" x="105" y="205">1. 使用入口层</text>
+
+  <rect class="entry" x="235" y="220" width="340" height="72"/>
+  <text class="box-title" x="260" y="250">index.md</text>
+  <text class="box-text" x="260" y="276">总入口、分类地图、最新更新时间</text>
+
+  <rect class="entry" x="630" y="220" width="360" height="72"/>
+  <text class="box-title" x="655" y="250">经验库说明.md</text>
+  <text class="box-text" x="655" y="276">给人看的白话说明和图示</text>
+
+  <rect class="entry" x="1045" y="220" width="360" height="72"/>
+  <text class="box-title" x="1070" y="250">wiki/*/index.md</text>
+  <text class="box-text" x="1070" y="276">分类索引：codex / claude / daily / vm</text>
+
+  <rect class="entry" x="1460" y="220" width="290" height="72"/>
+  <text class="box-title" x="1485" y="250">inbox/</text>
+  <text class="box-text" x="1485" y="276">临时资料入口，等待归档</text>
+
+  <rect class="layer" x="70" y="350" width="1780" height="175"/>
+  <text class="layer-title" x="105" y="390">2. 治理与规范层</text>
+
+  <rect class="govern" x="175" y="410" width="360" height="88"/>
+  <text class="box-title" x="200" y="442">AGENTS.md</text>
+  <text class="box-text" x="200" y="468">Agent 维护规则、读取顺序、敏感边界</text>
+  <text class="small" x="200" y="490">决定“后续 AI 该怎么工作”</text>
+
+  <rect class="govern" x="595" y="410" width="360" height="88"/>
+  <text class="box-title" x="620" y="442">wiki/README.md</text>
+  <text class="box-text" x="620" y="468">Wiki 页面格式和字段规范</text>
+  <text class="small" x="620" y="490">决定“知识页应该长什么样”</text>
+
+  <rect class="govern" x="1015" y="410" width="360" height="88"/>
+  <text class="box-title" x="1040" y="442">templates/*.md</text>
+  <text class="box-text" x="1040" y="468">source、wiki、索引、排障模板</text>
+  <text class="small" x="1040" y="490">决定“新增内容怎么标准化”</text>
+
+  <rect class="govern" x="1435" y="410" width="300" height="88"/>
+  <text class="box-title" x="1460" y="442">roadmap.md</text>
+  <text class="box-text" x="1460" y="468">改进计划和大改动缓冲区</text>
+  <text class="small" x="1460" y="490">大改先记录，避免乱进化</text>
+
+  <rect class="layer" x="70" y="560" width="1780" height="270"/>
+  <text class="layer-title" x="105" y="600">3. 知识资产层</text>
+
+  <rect class="asset" x="130" y="635" width="730" height="155"/>
+  <text class="box-title" x="165" y="668">sources/ 原始资料层</text>
+  <text class="box-text" x="165" y="698">职责：保存原始经验、截图、脚本、失败过程、成功过程。</text>
+  <line class="divider" x1="165" y1="718" x2="825" y2="718"/>
+  <text class="small" x="165" y="748">分类：codex / claude-code / daily / vm</text>
+  <text class="small" x="165" y="774">原则：尽量不重写原文，图片和 source.md 放在同一主题目录。</text>
+
+  <rect class="wiki" x="1060" y="635" width="730" height="155"/>
+  <text class="box-title" x="1095" y="668">wiki/ 提炼知识层</text>
+  <text class="box-text" x="1095" y="698">职责：沉淀快速结论、标准流程、常见问题、排查清单。</text>
+  <line class="divider" x1="1095" y1="718" x2="1755" y2="718"/>
+  <text class="small" x="1095" y="748">分类索引：wiki/codex、wiki/claude-code、wiki/daily、wiki/vm</text>
+  <text class="small" x="1095" y="774">原则：结论必须能追溯到 source_refs。</text>
+
+  <path class="arrow" d="M860 712 C930 712 990 712 1060 712"/>
+  <text class="tag" x="900" y="692">提炼 / 归纳</text>
+
+  <rect class="risk" x="710" y="855" width="500" height="80"/>
+  <text class="box-title" x="735" y="888">敏感信息边界</text>
+  <text class="box-text" x="735" y="916">令牌、密钥、内网、SSH、机器信息优先保留在 source；wiki 只写流程和判断方式。</text>
+
+  <path class="arrow-soft" d="M495 790 C570 850 640 875 710 895"/>
+  <path class="arrow-soft" d="M1425 790 C1345 850 1280 875 1210 895"/>
+
+  <rect class="layer" x="70" y="970" width="1780" height="145"/>
+  <text class="layer-title" x="105" y="1010">4. 维护闭环</text>
+
+  <rect class="ops" x="210" y="1032" width="250" height="56"/>
+  <text class="box-title" x="235" y="1068">新增资料</text>
+
+  <rect class="ops" x="560" y="1032" width="250" height="56"/>
+  <text class="box-title" x="585" y="1068">归档 sources</text>
+
+  <rect class="ops" x="910" y="1032" width="250" height="56"/>
+  <text class="box-title" x="935" y="1068">更新 wiki</text>
+
+  <rect class="ops" x="1260" y="1032" width="250" height="56"/>
+  <text class="box-title" x="1285" y="1068">更新索引</text>
+
+  <rect class="ops" x="1580" y="1032" width="190" height="56"/>
+  <text class="box-title" x="1605" y="1068">log.md</text>
+
+  <path class="arrow" d="M460 1060 L560 1060"/>
+  <path class="arrow" d="M810 1060 L910 1060"/>
+  <path class="arrow" d="M1160 1060 L1260 1060"/>
+  <path class="arrow" d="M1510 1060 L1580 1060"/>
+
+  <rect class="note" x="1215" y="75" width="565" height="72"/>
+  <text class="box-title" x="1240" y="105">核心原则</text>
+  <text class="box-text" x="1240" y="132">source 保真，wiki 提炼，index 导航，AGENTS 约束，log 留痕。</text>
+</svg>
