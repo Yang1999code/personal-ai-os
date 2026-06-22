@@ -3,7 +3,7 @@
 可以把下面这段直接发给 AI：
 
 ```text
-读取 $HOME/Desktop/myloop/ai-loop-mini/loop.md，
+读取 /Users/ycl/Desktop/myloop/ai-loop-mini/loop.md，
 按这个 Loop 跑一轮。
 
 本轮目标：

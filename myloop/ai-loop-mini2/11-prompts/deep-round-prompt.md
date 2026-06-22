@@ -1,7 +1,7 @@
 # Deep Round Prompt
 
 ```text
-读取 $HOME/Desktop/myloop/ai-loop-mini2/loop.md，
+读取 /Users/ycl/Desktop/myloop/ai-loop-mini2/loop.md，
 根据当前 `10-target/target.md` 和 `02-context-pack/context-pack.md` 跑一轮深度探索。
 
 请按以下原则：

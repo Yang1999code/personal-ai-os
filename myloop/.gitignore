@@ -1,2 +1,8 @@
 .DS_Store
 **/.DS_Store
+
+# Template folders are independent git repositories.
+# Root git tracks governance docs only.
+ai-loop-mini/
+ai-loop-mini2/
+ai-loop-mini3/

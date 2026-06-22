@@ -34,11 +34,11 @@
 
 ## 作为母模板使用
 
-真实任务不建议直接写进本模板。优先参考 `$HOME/Desktop/myloop/task-initializer.md`，在目标项目下生成任务专用 Loop（循环），再把本模板的规则特化进去。
+真实任务不建议直接写进本模板。优先参考 `/Users/ycl/Desktop/myloop/task-initializer.md`，在目标项目下生成任务专用 Loop（循环），再把本模板的规则特化进去。
 
 如果修改本模板本身，要同步更新：
 
-- `$HOME/Desktop/myloop/00-change-log/change-log.md`
+- `/Users/ycl/Desktop/myloop/00-change-log/change-log.md`
 - `修改记录.md`
 - `05-git-backups/git-backup-log.md`
 - 本模板的本地 git（版本控制）提交
@@ -52,7 +52,7 @@
 第一次试跑可以这样说：
 
 ```text
-读取 $HOME/Desktop/myloop/ai-loop-mini/loop.md，
+读取 /Users/ycl/Desktop/myloop/ai-loop-mini/loop.md，
 按这个 Loop 跑一轮。
 本轮目标是检查这个 Loop 工作区本身是否清楚、可执行，并更新状态、历史和输出记录。
 ```

@@ -11,7 +11,7 @@
 
 ## 记录
 
-- 2026-06-11：迁移到 `$HOME/Desktop/myloop/ai-loop-mini` 后，准备初始化本地 git 仓库，作为模板版本记录。
-- 2026-06-11：补充母模板使用说明，要求真实任务优先按 `$HOME/Desktop/myloop/task-initializer.md` 初始化到目标项目下；模板改动需同步根目录变更日志和本模板 git 提交。
+- 2026-06-11：迁移到 `/Users/ycl/Desktop/myloop/ai-loop-mini` 后，准备初始化本地 git 仓库，作为模板版本记录。
+- 2026-06-11：补充母模板使用说明，要求真实任务优先按 `/Users/ycl/Desktop/myloop/task-initializer.md` 初始化到目标项目下；模板改动需同步根目录变更日志和本模板 git 提交。
 - 2026-06-11：新增 `00-alignment/` 占位文件，让任务特化初始化的初始理解、用户确认和最终对齐有明确落点。
 - 2026-06-11：新增中文 `修改记录.md` 总账，并要求任务专用 Loop 初始化独立本地 git。

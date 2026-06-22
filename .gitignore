@@ -1,33 +1,13 @@
 .DS_Store
-Thumbs.db
-
-# Secrets and local credentials
+*.log
+*.tmp
+*.bak
+*.swp
+*.swo
 .env
 .env.*
-*.pem
-*.key
-id_rsa
-id_ed25519
-
-# Local AI runtime/history
-.codex/
-.claude/
-.agents/cache/
-sessions/
-memories/
-
-# Knowledge base private raw materials
-my知识库/
-my知识库-template/sources/**
-!my知识库-template/sources/.gitkeep
-my知识库-template/inbox/**
-!my知识库-template/inbox/.gitkeep
-
-# Loop runtime exchange
-**/03-exchange/
-**/.project-loops/
-
-# Build/cache
-node_modules/
-__pycache__/
-.pytest_cache/
+**/.git/
+**/.claude/settings.local.json
+**/node_modules/
+**/__pycache__/
+**/.pytest_cache/

@@ -1,4 +1,0 @@
-interface:
-  display_name: "myloop"
-  short_description: "从本地 myloop 模板启动多轮深度工作流"
-  default_prompt: "/myloop 目标：请在这里写任务目标。任务地址：请在这里写路径或链接。"

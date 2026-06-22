@@ -41,11 +41,11 @@
 
 ## 1.1 母模板与任务特化
 
-本文件夹是母模板。真实任务优先参考 `$HOME/Desktop/myloop/task-initializer.md`，在目标项目下创建任务专用 Loop（循环），再运行。
+本文件夹是母模板。真实任务优先参考 `/Users/ycl/Desktop/myloop/task-initializer.md`，在目标项目下创建任务专用 Loop（循环），再运行。
 
 如果用户明确要求直接改模板，修改后必须记录：
 
-- `$HOME/Desktop/myloop/00-change-log/change-log.md`
+- `/Users/ycl/Desktop/myloop/00-change-log/change-log.md`
 - `修改记录.md`
 - `05-git-backups/git-backup-log.md`
 - 本模板 git（版本控制）提交

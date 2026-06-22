@@ -191,7 +191,7 @@ git commit -m "Initial task loop"
 
 ## 与 myloop skill 的关系
 
-`$HOME/Desktop/myskill/myloop/SKILL.md` 只负责稳定启动和读取本目录。
+`/Users/ycl/Desktop/myskill/myloop/SKILL.md` 只负责稳定启动和读取本目录。
 
 不要把本文件内容复制进 skill（技能）。以后升级初始化方法，直接改本文件。
 

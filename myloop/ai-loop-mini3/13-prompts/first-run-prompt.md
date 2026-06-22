@@ -5,15 +5,15 @@
 先在终端 A 运行：
 
 ```bash
-cd $HOME/Desktop/myloop/ai-loop-mini3
+cd /Users/ycl/Desktop/myloop/ai-loop-mini3
 bash 02-runtime/run-loop.sh
 ```
 
 然后把下面这段发给终端 B 里的 Claude/Codex：
 
 ```text
-读取 $HOME/Desktop/myloop/ai-loop-mini3/03-exchange/inbox/round-1.request.md，
-再读取 $HOME/Desktop/myloop/ai-loop-mini3/loop.md。
+读取 /Users/ycl/Desktop/myloop/ai-loop-mini3/03-exchange/inbox/round-1.request.md，
+再读取 /Users/ycl/Desktop/myloop/ai-loop-mini3/loop.md。
 
 请作为 Explorer（探索者）完成第 1 轮。
 
@@ -25,7 +25,7 @@ bash 02-runtime/run-loop.sh
 - status 字段是否足够让脚本判断继续、停止或问人
 
 请把结果写入：
-$HOME/Desktop/myloop/ai-loop-mini3/03-exchange/outbox/round-1.explorer.md
+/Users/ycl/Desktop/myloop/ai-loop-mini3/03-exchange/outbox/round-1.explorer.md
 
 输出顶部必须包含：
 round: 1

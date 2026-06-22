@@ -18,7 +18,7 @@
 示例：
 
 ```text
-$HOME/Desktop/my-project
+/Users/ycl/Desktop/my-project
 ```
 
 ## 优化方向
