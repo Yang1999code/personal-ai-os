@@ -1,0 +1,4 @@
+agent:
+  display_name: "skill-check"
+  short_description: "只读检查本地 skill 安装、软链接和入口文件"
+  default_prompt: "/skill-check 只读检查我本机的 skills 是否安装正确，先查 my知识库 和 myloop。"

@@ -31,7 +31,7 @@
 
 ## 0.1 母模板与任务特化
 
-本文件夹是当前 `myloop` skill（技能）的默认母模板。真实任务优先参考 `/Users/ycl/Desktop/myloop/task-initializer.md`，在目标项目下创建任务专用 Loop（循环），不要把长期任务状态直接写进母模板。
+本文件夹是当前 `myloop` skill（技能）的默认母模板。真实任务优先参考 `$HOME/Desktop/myloop/task-initializer.md`，在目标项目下创建任务专用 Loop（循环），不要把长期任务状态直接写进母模板。
 
 任务特化时必须先做对齐：
 
@@ -43,7 +43,7 @@
 
 如果用户明确要求直接修改本模板，修改后必须记录：
 
-- `/Users/ycl/Desktop/myloop/00-change-log/change-log.md`
+- `$HOME/Desktop/myloop/00-change-log/change-log.md`
 - `修改记录.md`
 - `06-git-backups/git-backup-log.md`
 - 本模板 git（版本控制）提交

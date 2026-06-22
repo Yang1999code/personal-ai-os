@@ -1,6 +1,6 @@
 # 个人 AI 自动化系统使用说明
 
-> 给其他 Agent（智能体）看的总入口。读完这份文档后，应能正确使用 `/Users/ycl/Desktop/myskill`、`/Users/ycl/Desktop/myloop`、`/Users/ycl/Desktop/my知识库`，并知道什么时候直接问答、什么时候启动 Loop（循环）、什么时候沉淀经验。
+> 给其他 Agent（智能体）看的总入口。读完这份文档后，应能正确使用 `$HOME/Desktop/myskill`、`$HOME/Desktop/myloop`、`$HOME/Desktop/my知识库`，并知道什么时候直接问答、什么时候启动 Loop（循环）、什么时候沉淀经验。
 
 ## 0. 一句话总览
 
@@ -29,9 +29,9 @@ skill（技能）
 
 | 层 | 路径 | 角色 | 不该做什么 |
 | --- | --- | --- | --- |
-| skill（技能）入口层 | `/Users/ycl/Desktop/myskill` | 给 Codex、Claude Code 等 Agent 一个稳定入口 | 不要把完整流程都复制进 skill |
-| loop（循环）流程层 | `/Users/ycl/Desktop/myloop` | 复杂任务、多轮探索、执行、测试、复盘 | 不要直接污染母模板承载真实任务 |
-| LLM Wiki（大语言模型维基）经验层 | `/Users/ycl/Desktop/my知识库` | 保存 source（原始证据）和 wiki（提炼答案） | 不要把它当流水账或敏感信息仓库 |
+| skill（技能）入口层 | `$HOME/Desktop/myskill` | 给 Codex、Claude Code 等 Agent 一个稳定入口 | 不要把完整流程都复制进 skill |
+| loop（循环）流程层 | `$HOME/Desktop/myloop` | 复杂任务、多轮探索、执行、测试、复盘 | 不要直接污染母模板承载真实任务 |
+| LLM Wiki（大语言模型维基）经验层 | `$HOME/Desktop/my知识库` | 保存 source（原始证据）和 wiki（提炼答案） | 不要把它当流水账或敏感信息仓库 |
 
 三个目录的关系：
 
@@ -60,10 +60,10 @@ flowchart TD
 
 它的职责是让不同 Agent 知道：
 
-- 用户说 `/myloop` 时，应该去读 `/Users/ycl/Desktop/myloop`。
-- 用户说 `/my知识库` 时，应该去读 `/Users/ycl/Desktop/my知识库/AGENTS.md`。
+- 用户说 `/myloop` 时，应该去读 `$HOME/Desktop/myloop`。
+- 用户说 `/my知识库` 时，应该去读 `$HOME/Desktop/my知识库/AGENTS.md`。
 - 用户说 `/skill-check` 时，应该只读检查 skill 安装状态。
-- 用户说控制如流机器人、如流群测试等时，才进入对应专项 skill。
+- 用户说<business-skill>、业务工具测试等时，才进入对应专项 skill。
 
 不要把真实流程复制进 `SKILL.md`。真实流程应该继续放在 `myloop` 或 `my知识库` 里面。
 
@@ -71,22 +71,22 @@ flowchart TD
 
 | Skill | 路径 | 触发场景 | 真实来源 |
 | --- | --- | --- | --- |
-| `myloop` | `/Users/ycl/Desktop/myskill/myloop/SKILL.md` | 用户说 `/myloop`、`myloop`、启动深度循环 | `/Users/ycl/Desktop/myloop` |
-| `my知识库` | `/Users/ycl/Desktop/myskill/my知识库/SKILL.md` | 用户说 `/my知识库`、沉淀经验、更新本地知识库 | `/Users/ycl/Desktop/my知识库/AGENTS.md` |
-| `skill-check` | `/Users/ycl/Desktop/myskill/skill-check/SKILL.md` | 检查 Claude Code skill 安装、软链接、触发准备状态 | `/Users/ycl/Desktop/myskill/Claude-Code配置说明.md` |
-| `控制如流机器人` | `/Users/ycl/Desktop/myskill/控制如流机器人/SKILL.md` | 操作如流桌面端、真实 @ 机器人、验证 bridge/Webhook 链路 | 该 skill 内的专项流程 |
+| `myloop` | `$HOME/Desktop/myskill/myloop/SKILL.md` | 用户说 `/myloop`、`myloop`、启动深度循环 | `$HOME/Desktop/myloop` |
+| `my知识库` | `$HOME/Desktop/myskill/my知识库/SKILL.md` | 用户说 `/my知识库`、沉淀经验、更新本地知识库 | `$HOME/Desktop/my知识库/AGENTS.md` |
+| `skill-check` | `$HOME/Desktop/myskill/skill-check/SKILL.md` | 检查 Claude Code skill 安装、软链接、触发准备状态 | `$HOME/Desktop/myskill/Claude-Code配置说明.md` |
+| `<business-skill>` | `$HOME/Desktop/myskill/<business-skill>/SKILL.md` | 操作业务工具桌面端、真实触发业务机器人、验证 bridge/Webhook 链路 | 该 skill 内的专项流程 |
 
 ### 2.3 Agent 使用规则
 
 当你作为 Agent 看到用户提到 `myskill`：
 
-1. 先读 `/Users/ycl/Desktop/myskill/Claude-Code配置说明.md`，理解安装和软链接规则。
+1. 先读 `$HOME/Desktop/myskill/Claude-Code配置说明.md`，理解安装和软链接规则。
 2. 再读目标 skill 的 `SKILL.md`。
 3. 判断这是“入口问题”还是“真实流程问题”。
 4. 如果只是安装、软链接、触发排查，优先用 `skill-check` 思路，只读检查。
 5. 如果要改真实流程，不要优先改 `myskill`，而要去改对应真实来源：
-   - Loop 流程改 `/Users/ycl/Desktop/myloop`。
-   - 知识库写入规则改 `/Users/ycl/Desktop/my知识库/AGENTS.md`。
+   - Loop 流程改 `$HOME/Desktop/myloop`。
+   - 知识库写入规则改 `$HOME/Desktop/my知识库/AGENTS.md`。
 
 ### 2.4 边界
 
@@ -138,17 +138,17 @@ flowchart TD
 必须优先读：
 
 ```text
-/Users/ycl/Desktop/myloop/README.md
-/Users/ycl/Desktop/myloop/task-initializer.md
+$HOME/Desktop/myloop/README.md
+$HOME/Desktop/myloop/task-initializer.md
 ```
 
 默认执行模板：
 
 ```text
-/Users/ycl/Desktop/myloop/ai-loop-mini2/loop.md
+$HOME/Desktop/myloop/ai-loop-mini2/loop.md
 ```
 
-不要为了升级流程去改 `/Users/ycl/Desktop/myskill/myloop/SKILL.md`。skill 只是入口，流程真实来源是 `/Users/ycl/Desktop/myloop`。
+不要为了升级流程去改 `$HOME/Desktop/myskill/myloop/SKILL.md`。skill 只是入口，流程真实来源是 `$HOME/Desktop/myloop`。
 
 ### 3.3 三个执行模板
 
@@ -273,24 +273,24 @@ git commit -m "Initial task loop"
 当用户说 `/my知识库`、沉淀经验、更新本地知识库时，必须先读：
 
 ```text
-/Users/ycl/Desktop/my知识库/AGENTS.md
+$HOME/Desktop/my知识库/AGENTS.md
 ```
 
 然后按顺序读：
 
 ```text
-/Users/ycl/Desktop/my知识库/index.md
-/Users/ycl/Desktop/my知识库/维护/当前上下文交接.md
-/Users/ycl/Desktop/my知识库/导航/README.md
-/Users/ycl/Desktop/my知识库/wiki/README.md
+$HOME/Desktop/my知识库/index.md
+$HOME/Desktop/my知识库/维护/当前上下文交接.md
+$HOME/Desktop/my知识库/导航/README.md
+$HOME/Desktop/my知识库/wiki/README.md
 ```
 
 必要时再读：
 
 ```text
-/Users/ycl/Desktop/my知识库/维护/全量索引.md
-/Users/ycl/Desktop/my知识库/wiki/<category>/index.md
-/Users/ycl/Desktop/my知识库/sources/<category>/<topic>/source.md
+$HOME/Desktop/my知识库/维护/全量索引.md
+$HOME/Desktop/my知识库/wiki/<category>/index.md
+$HOME/Desktop/my知识库/sources/<category>/<topic>/source.md
 ```
 
 不要一上来全文扫描所有资料。先通过 `index.md` 和 `导航/` 定位，再读最相关的内容。
@@ -406,10 +406,10 @@ flowchart TD
 
 执行：
 
-1. 读 `/Users/ycl/Desktop/myskill/myloop/SKILL.md`。
-2. 读 `/Users/ycl/Desktop/myloop/README.md`。
+1. 读 `$HOME/Desktop/myskill/myloop/SKILL.md`。
+2. 读 `$HOME/Desktop/myloop/README.md`。
 3. 根据任务阶段选择场景 Loop 或默认 `ai-loop-mini2`。
-4. 如果是真实任务，读 `/Users/ycl/Desktop/myloop/task-initializer.md`。
+4. 如果是真实任务，读 `$HOME/Desktop/myloop/task-initializer.md`。
 5. 先做 `initial-understanding.md`，和用户对齐，不要直接开跑。
 6. 高风险动作先问人。
 
@@ -417,8 +417,8 @@ flowchart TD
 
 执行：
 
-1. 读 `/Users/ycl/Desktop/myskill/my知识库/SKILL.md`。
-2. 读 `/Users/ycl/Desktop/my知识库/AGENTS.md`。
+1. 读 `$HOME/Desktop/myskill/my知识库/SKILL.md`。
+2. 读 `$HOME/Desktop/my知识库/AGENTS.md`。
 3. 读 `index.md` 和相关导航页。
 4. 判断是更新已有主题还是新建主题。
 5. source 放证据，wiki 放结论。
@@ -429,9 +429,9 @@ flowchart TD
 
 执行：
 
-1. 读 `/Users/ycl/Desktop/myskill/skill-check/SKILL.md`。
-2. 读 `/Users/ycl/Desktop/myskill/Claude-Code配置说明.md`。
-3. 检查 `/Users/ycl/Desktop/myskill` 源目录。
+1. 读 `$HOME/Desktop/myskill/skill-check/SKILL.md`。
+2. 读 `$HOME/Desktop/myskill/Claude-Code配置说明.md`。
+3. 检查 `$HOME/Desktop/myskill` 源目录。
 4. 检查 `~/.claude/skills` 软链接。
 5. 检查 `SKILL.md` 和 `agents/openai.yaml`。
 6. 输出 pass/fail（通过/失败）矩阵。
@@ -441,9 +441,9 @@ flowchart TD
 
 执行：
 
-1. 先读 `/Users/ycl/Desktop/my知识库/wiki/codex/个人AI操作系统.md`。
-2. 再读 `/Users/ycl/Desktop/myloop/README.md`。
-3. 再读 `/Users/ycl/Desktop/myskill/Claude-Code配置说明.md`。
+1. 先读 `$HOME/Desktop/my知识库/wiki/codex/个人AI操作系统.md`。
+2. 再读 `$HOME/Desktop/myloop/README.md`。
+3. 再读 `$HOME/Desktop/myskill/Claude-Code配置说明.md`。
 4. 输出时按三层分工组织：
    - skill（技能）：入口和自动触发。
    - loop（循环）：复杂任务流程。
@@ -545,9 +545,9 @@ skill 是把重复经验变成稳定入口。
 
 | 桶 | 判断问题 | 放哪里 |
 | --- | --- | --- |
-| skill | 是否重复、固定、可执行？ | `/Users/ycl/Desktop/myskill` |
-| loop | 是否复杂、多轮、要验证？ | `/Users/ycl/Desktop/myloop` |
-| md/wiki | 是否可复用但不一定自动执行？ | `/Users/ycl/Desktop/my知识库` |
+| skill | 是否重复、固定、可执行？ | `$HOME/Desktop/myskill` |
+| loop | 是否复杂、多轮、要验证？ | `$HOME/Desktop/myloop` |
+| md/wiki | 是否可复用但不一定自动执行？ | `$HOME/Desktop/my知识库` |
 
 ### 8.3 建议三：把“人怎么带任务”交给 meta-loop
 

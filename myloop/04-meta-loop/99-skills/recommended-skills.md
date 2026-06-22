@@ -7,7 +7,7 @@
 | skill | 状态 | 用途 |
 | --- | --- | --- |
 | `my知识库` | 已有，本地 skill | 查历史经验、以前确认过的偏好、可复用规则 |
-| `read-baidu-ku` | 已有，本地 skill | 当完整任务里涉及百度内网资料时，补证据 |
+| `internal-knowledge-skill` | 已有，本地 skill | 当完整任务里涉及内部资料时，补证据 |
 | `openai-docs` | 系统内置 | 遇到 OpenAI / Codex / API 相关任务时查官方资料 |
 | `skill-check` | 已有，本地 skill | 检查某次任务里提到的 skill 入口是否真的装好 |
 

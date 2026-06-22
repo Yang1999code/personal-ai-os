@@ -9,7 +9,7 @@ Superpowers 是可选开发方法参考，不在本 Loop（循环）中默认启
 - 只有用户明确说“启用 Superpowers 模式”或“参考 Superpowers”时才读取本文件。
 - 只在 `02-create-loop` 中作为创建/实现阶段的增强方法。
 - 不替代 `01-research-loop`、`02-create-loop`、`03-test-loop` 的分层。
-- 不影响 `/Users/ycl/Desktop/myskill/myloop/SKILL.md` 的默认入口。
+- 不影响 `$HOME/Desktop/myskill/myloop/SKILL.md` 的默认入口。
 
 ## 什么时候参考
 

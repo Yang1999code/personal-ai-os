@@ -4,9 +4,9 @@
 
 当前稳定入口保持不变：
 
-- 根目录：`/Users/ycl/Desktop/myloop`
-- 默认模板：`/Users/ycl/Desktop/myloop/ai-loop-mini2`
-- 默认入口：`/Users/ycl/Desktop/myloop/ai-loop-mini2/loop.md`
+- 根目录：`$HOME/Desktop/myloop`
+- 默认模板：`$HOME/Desktop/myloop/ai-loop-mini2`
+- 默认入口：`$HOME/Desktop/myloop/ai-loop-mini2/loop.md`
 
 不要为了升级流程去改 `myskill/myloop`。优先更新本目录内的模板、说明和治理文件，让 skill（技能）继续按原来的检索方式读取最新内容。
 
@@ -22,7 +22,7 @@
 
 | 场景 Loop | 定位 | 适合场景 |
 | --- | --- | --- |
-| `01-research-loop` | 查找/需求 Loop（循环） | 目标不清楚，先查本地知识库、百度 KU、网络资料，输出需求和 Done 标准 |
+| `01-research-loop` | 查找/需求 Loop（循环） | 目标不清楚，先查本地知识库、内部知识库、网络资料，输出需求和 Done 标准 |
 | `02-create-loop` | 创建/实现 Loop（循环） | 目标清楚后，创建项目、改代码、写文档，并复用旧 loop1/2/3 作为执行引擎 |
 | `03-test-loop` | 测试/验收 Loop（循环） | 独立测试，不默认相信实现者，构造测试集、写测试用例、出验收结论 |
 | `04-meta-loop` | 元学习 Loop（循环） | 回看一次完整任务，学习“人是怎么带任务的”，抽取并对齐可复用的人类处理方式 |
@@ -42,8 +42,8 @@
 普通任务默认从 `ai-loop-mini2` 开始：
 
 ```text
-读取 /Users/ycl/Desktop/myloop/ai-loop-mini2/loop.md，
-参考 /Users/ycl/Desktop/myloop/task-initializer.md，
+读取 $HOME/Desktop/myloop/ai-loop-mini2/loop.md，
+参考 $HOME/Desktop/myloop/task-initializer.md，
 围绕我的目标和目标文件夹，先生成任务专用 Loop 初始化理解，再和我对齐。
 ```
 
@@ -104,7 +104,7 @@
 
 每个任务专用 Loop 都要初始化自己的独立本地 git（版本控制）仓库，只记录这个任务 Loop 自己的状态、记录和输出；不要用它替目标项目提交代码。
 
-如果改动会影响 `/Users/ycl/Desktop/myskill/myloop/SKILL.md` 依赖的稳定入口，必须先问人。
+如果改动会影响 `$HOME/Desktop/myskill/myloop/SKILL.md` 依赖的稳定入口，必须先问人。
 
 ## 白话总结
 

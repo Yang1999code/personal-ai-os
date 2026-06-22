@@ -6,8 +6,8 @@
 
 1. 读取 create Loop 的 `04-handoff-to-test/`。
 2. 读取需求、Done（完成）标准和实现说明。
-3. 查询 `/Users/ycl/Desktop/my知识库` 中的代码规范、测试规范、历史问题。
-4. 如果需要百度内部规范，使用 `read-baidu-ku` skill（技能）。
+3. 查询 `$HOME/Desktop/my知识库` 中的代码规范、测试规范、历史问题。
+4. 如果需要内部规范，使用 `internal-knowledge-skill` skill（技能）。
 5. 在 `00-test-charter/` 写测试范围和风险。
 6. 在 `02-test-data/` 构造测试集。
 7. 在 `03-test-cases/` 写测试用例。

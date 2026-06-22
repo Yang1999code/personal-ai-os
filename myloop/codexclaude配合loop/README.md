@@ -38,7 +38,7 @@ docs/ai-collaboration/
 让 Codex 读取：
 
 ```text
-/Users/ycl/Desktop/myloop/codexclaude配合loop/loop.md
+$HOME/Desktop/myloop/codexclaude配合loop/loop.md
 ```
 
 然后给出：

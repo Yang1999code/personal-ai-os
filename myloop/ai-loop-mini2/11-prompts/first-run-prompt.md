@@ -3,7 +3,7 @@
 可以直接复制下面这段：
 
 ```text
-读取 /Users/ycl/Desktop/myloop/ai-loop-mini2/loop.md，
+读取 $HOME/Desktop/myloop/ai-loop-mini2/loop.md，
 按 human-guided deep loop 跑第 1 轮。
 
 本轮目标：

@@ -6,8 +6,8 @@
 
 | skill | 状态 | 为什么推荐 | 适合什么时候用 |
 | --- | --- | --- | --- |
-| `my知识库` | 已有，本地 skill | 直接查你的本地私有经验库，最贴近你的历史资料和偏好 | 调研开始时，先查 `/Users/ycl/Desktop/my知识库` |
-| `read-baidu-ku` | 已有，本地 skill | 能读百度内网 KU 文档，适合内部规范、方案、流程 | 用户给 KU 链接，或任务明显依赖百度内部资料 |
+| `my知识库` | 已有，本地 skill | 直接查你的本地私有经验库，最贴近你的历史资料和偏好 | 调研开始时，先查 `$HOME/Desktop/my知识库` |
+| `internal-knowledge-skill` | 已有，本地 skill | 能读内部 KU 文档，适合内部规范、方案、流程 | 用户给 KU 链接，或任务明显依赖内部资料 |
 | `openai-docs` | 系统内置/官方 | 查 OpenAI/Codex/API 官方最新文档，比普通搜索更可靠 | 调研 OpenAI、Codex、模型、API 相关问题 |
 
 ## 官方 curated 可选增强
@@ -29,7 +29,7 @@
 1. `openai-docs`：查 Agent、API、模型和 Codex 官方资料。
 2. `define-goal`：把模糊需求收敛成目标、边界和 Done 标准。
 3. `my知识库`：复用你自己的 Agent 开发经验和本地规范。
-4. `read-baidu-ku`：查百度内部规范、方案和项目资料。
+4. `internal-knowledge-skill`：查内部规范、方案和项目资料。
 5. `notion-spec-to-implementation`：如果需求来自 Notion/规格文档，再考虑安装。
 
 ## 使用顺序
@@ -37,7 +37,7 @@
 ```text
 本地项目资料
 -> my知识库
--> read-baidu-ku
+-> internal-knowledge-skill
 -> openai-docs / define-goal
 -> 可选 curated skill
 ```

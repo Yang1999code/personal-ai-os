@@ -19,7 +19,7 @@
 3. 终端 A 运行：
 
 ```bash
-cd /Users/ycl/Desktop/myloop/ai-loop-mini3
+cd $HOME/Desktop/myloop/ai-loop-mini3
 bash 02-runtime/run-loop.sh
 ```
 
@@ -46,11 +46,11 @@ bash 02-runtime/run-loop.sh
 
 ## 作为母模板使用
 
-真实任务不建议直接写进本模板。优先参考 `/Users/ycl/Desktop/myloop/task-initializer.md`，在目标项目下生成任务专用 Loop（循环），再决定是否启用 while 脚本、多终端和文件锁。
+真实任务不建议直接写进本模板。优先参考 `$HOME/Desktop/myloop/task-initializer.md`，在目标项目下生成任务专用 Loop（循环），再决定是否启用 while 脚本、多终端和文件锁。
 
 如果修改本模板本身，要同步更新：
 
-- `/Users/ycl/Desktop/myloop/00-change-log/change-log.md`
+- `$HOME/Desktop/myloop/00-change-log/change-log.md`
 - `修改记录.md`
 - `08-git-backups/git-backup-log.md`
 - 本模板的本地 git（版本控制）提交

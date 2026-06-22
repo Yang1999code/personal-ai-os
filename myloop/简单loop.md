@@ -58,9 +58,9 @@ flowchart TD
 2. 确认边界：哪些能做，哪些不能做。
 3. 确认输出：用户要报告、文件、网页展示，还是只要建议。
 4. 查本地规则：
-   - `/Users/ycl/Desktop/myskill`
-   - `/Users/ycl/Desktop/myloop`
-   - `/Users/ycl/Desktop/my知识库`
+   - `$HOME/Desktop/myskill`
+   - `$HOME/Desktop/myloop`
+   - `$HOME/Desktop/my知识库`
 5. 先查 `my知识库` 中是否已有类似经验。
 
 ## 推荐读取顺序
@@ -68,8 +68,8 @@ flowchart TD
 ```text
 1. 用户当前指令
 2. 目标项目 README.md / AGENTS.md / CLAUDE.md / docs
-3. /Users/ycl/Desktop/my知识库
-4. /Users/ycl/Desktop/myloop 中相关 loop
+3. $HOME/Desktop/my知识库
+4. $HOME/Desktop/myloop 中相关 loop
 5. 官方文档或网络资料
 ```
 
@@ -183,7 +183,7 @@ AI 不应该做：
 其他任务可以这样引用：
 
 ```text
-请读取 /Users/ycl/Desktop/myloop/简单loop.md，
+请读取 $HOME/Desktop/myloop/简单loop.md，
 按“简单 loop”的方式帮我做：
 1. 先查 my知识库 和目标项目资料；
 2. 只整理资料、风险、问题和下一步选项；

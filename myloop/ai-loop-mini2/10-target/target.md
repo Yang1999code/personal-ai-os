@@ -13,7 +13,7 @@
 示例：
 
 ```text
-/Users/ycl/Desktop/my-project
+$HOME/Desktop/my-project
 ```
 
 ## Done 判断

@@ -15,7 +15,7 @@
 没有特殊要求时使用：
 
 ```text
-/Users/ycl/Desktop/myloop/ai-loop-mini2/loop.md
+$HOME/Desktop/myloop/ai-loop-mini2/loop.md
 ```
 
 这也是当前 `myloop` skill（技能）的稳定入口。

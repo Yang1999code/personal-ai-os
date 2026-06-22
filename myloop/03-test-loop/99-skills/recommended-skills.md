@@ -6,7 +6,7 @@
 
 | skill | 状态 | 为什么推荐 | 适合什么时候用 |
 | --- | --- | --- | --- |
-| `read-baidu-ku` | 已有，本地 skill | 查百度内部代码规范、测试规范、验收标准 | 内部项目或需要百度规范 |
+| `internal-knowledge-skill` | 已有，本地 skill | 查内部代码规范、测试规范、验收标准 | 内部项目或需要内部规范 |
 | `my知识库` | 已有，本地 skill | 查你的历史故障、规范、测试经验 | 制定测试策略前 |
 | `browser:control-in-app-browser` | 插件内置 | 打开本地页面、截图、检查交互 | 前端/网页项目验收 |
 
@@ -32,13 +32,13 @@
 3. `security-best-practices`：Agent 涉及 token（令牌）、工具权限、外部调用时必须看。
 4. `security-threat-model`：做工具调用、插件、自动化执行前，先想清楚风险边界。
 5. `sentry`：Agent 上线后看异常、错误聚类和真实失败样本。
-6. `read-baidu-ku` / `my知识库`：内部规范和你自己的历史测试经验仍然优先。
+6. `internal-knowledge-skill` / `my知识库`：内部规范和你自己的历史测试经验仍然优先。
 
 ## 使用顺序
 
 ```text
 读需求和 Done 标准
--> 查 my知识库 / read-baidu-ku
+-> 查 my知识库 / internal-knowledge-skill
 -> 构造测试集
 -> 写测试用例
 -> 用 browser / playwright / CI / security / sentry 类 skill 验证

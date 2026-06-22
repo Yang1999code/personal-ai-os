@@ -2,13 +2,13 @@
 
 ```text
 读取当前 round request：
-/Users/ycl/Desktop/myloop/ai-loop-mini3/03-exchange/inbox/round-N.request.md
+$HOME/Desktop/myloop/ai-loop-mini3/03-exchange/inbox/round-N.request.md
 
 再读取：
-/Users/ycl/Desktop/myloop/ai-loop-mini3/loop.md
+$HOME/Desktop/myloop/ai-loop-mini3/loop.md
 
 请完成本轮深度探索，并写入：
-/Users/ycl/Desktop/myloop/ai-loop-mini3/03-exchange/outbox/round-N.explorer.md
+$HOME/Desktop/myloop/ai-loop-mini3/03-exchange/outbox/round-N.explorer.md
 
 要求：
 - 先整理上下文，再分析

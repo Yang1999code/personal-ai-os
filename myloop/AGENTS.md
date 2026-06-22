@@ -1,4 +1,4 @@
-# AGENTS.md instructions for /Users/ycl/Desktop/myloop
+# AGENTS.md instructions for $HOME/Desktop/myloop
 
 1. 对话尽量用中文；如果有英文专有名词，后面加括号写中文解释，例如 Webhook（网络回调）、token（令牌）、agent（智能体）。
 
@@ -8,7 +8,7 @@
 
 4. 遇到复杂任务时，可以先看看有没有成熟的 skill（技能）或者插件。如果需要安装或启用新的 skill/插件，先停下问我要不要安装使用。
 
-5. 遇到复杂操作、外部平台能力、工具链、API（接口）、如流、Claude Code、OpenAI/Codex 等可能变化的信息时，先看官方文档、项目文档或联网查经验，不要只凭记忆回答。
+5. 遇到复杂操作、外部平台能力、工具链、API（接口）、业务工具、Claude Code、OpenAI/Codex 等可能变化的信息时，先看官方文档、项目文档或联网查经验，不要只凭记忆回答。
 
 6. 遇到不懂、没把握、没思路或连续失败时，不要一直在同一个方向循环尝试。优先按顺序处理：
    - 看项目文档、README、AGENTS.md、代码注释、变更记录。
@@ -17,15 +17,15 @@
    - 如果仍然不确定，停下来问我，不要继续猜。
 
 7. 我的个人 AI 操作系统：
-   - `/Users/ycl/Desktop/myskill` 是 skill（技能）入口层。
-   - `/Users/ycl/Desktop/myloop` 是 loop（循环）工作流层。
-   - `/Users/ycl/Desktop/my知识库` 是 Markdown（文档）/ wiki（维基）经验沉淀层。
+   - `$HOME/Desktop/myskill` 是 skill（技能）入口层。
+   - `$HOME/Desktop/myloop` 是 loop（循环）工作流层。
+   - `$HOME/Desktop/my知识库` 是 Markdown（文档）/ wiki（维基）经验沉淀层。
    - 简单问题直接回答。
    - 复杂探索、长期任务、需要复盘的任务，优先考虑是否使用 myloop。
    - 有复用价值的经验，优先沉淀到 my知识库。
    - 遇到 myloop、myskill、my知识库 相关任务时，先读对应本地规则文件，不要凭印象回答。
 
-8. 当上下文太长、即将压缩，或者本轮已经积累出可复用结论时，可以先把重要内容整理进 my知识库 的合适 Markdown 文件中；如果没有合适页面，可以创建新的页面。写入前要遵守 `/Users/ycl/Desktop/my知识库/AGENTS.md` 的规则。
+8. 当上下文太长、即将压缩，或者本轮已经积累出可复用结论时，可以先把重要内容整理进 my知识库 的合适 Markdown 文件中；如果没有合适页面，可以创建新的页面。写入前要遵守 `$HOME/Desktop/my知识库/AGENTS.md` 的规则。
 
 9. my知识库 中同一个项目的资料尽量聚合到同一个项目主题文件夹下，方便后续多次检索。不是说所有内容都写进一个 Markdown 文件；不同任务、不同主题可以拆成多个 `.md`，但目录上尽量集中。
 
