@@ -7,6 +7,7 @@
 - `/myloop`：跳转到本机 `myloop` 工作流。
 - `/my知识库`：跳转到本机 `my知识库` 维护规则。
 - `/skill-check`：只读检查 skill 安装和软链接状态。
+- `business-skill-template`：给具体业务工具、机器人、服务链路写私有 skill 时使用的模板。
 
 ## 目录结构
 
@@ -19,7 +20,10 @@ myskill/
 ├── my知识库/
 │   ├── SKILL.md
 │   └── agents/openai.yaml
-└── skill-check/
+├── skill-check/
+│   ├── SKILL.md
+│   └── agents/openai.yaml
+└── business-skill-template/
     ├── SKILL.md
     └── agents/openai.yaml
 ```
@@ -29,6 +33,7 @@ myskill/
 - skill 只做稳定入口和边界说明。
 - 真实流程运行时读取 `$HOME/Desktop/myloop` 或 `$HOME/Desktop/my知识库`。
 - 不把知识库正文、项目资料、业务细节复制进 skill。
+- 具体业务 skill 可以在私有本地版本里写细节，但公开仓库只保留模板和脱敏规则。
 - 安装时建议用软链接，不要复制多份长期维护。
 
 ## 白话总结

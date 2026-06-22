@@ -8,7 +8,7 @@
 
 - `docs/个人AI自动化系统使用说明.md`：给其他 Agent（智能体）阅读的总说明。
 - `myloop/`：Loop（循环）工作流模板与场景 Loop，已排除本地 `.git/`、`.DS_Store` 和 PDF 产物。
-- `myskill/`：通用 skill（技能）入口模板，包括 `myloop`、`my知识库`、`skill-check`，使用 `$HOME` 路径，不绑定个人机器。
+- `myskill/`：通用 skill（技能）入口模板，包括 `myloop`、`my知识库`、`skill-check`、`business-skill-template`，使用 `$HOME` 路径，不绑定个人机器。
 - `my知识库-template/`：可复刻的空知识库骨架，包含 AGENTS、index、导航、wiki 规范、templates 和维护文档。
 - `architecture/my知识库架构.md`：知识库架构说明，不包含私有知识库正文。
 - `architecture/myskill架构.md`：skill（技能）入口层架构说明。

@@ -1,0 +1,4 @@
+agent:
+  display_name: "business-skill-template"
+  short_description: "业务工具/机器人/服务链路验证 skill 模板"
+  default_prompt: "/business-skill-template 目标：请在这里写业务验证目标。对象：请在这里写本地路径或工具名称。"
