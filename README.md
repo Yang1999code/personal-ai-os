@@ -1,5 +1,9 @@
 # Personal AI OS
 
+<p align="center">
+  <img src="assets/cover.png" alt="Personal AI OS cover" width="100%" />
+</p>
+
 这是一个脱敏版个人 AI 操作系统（Personal AI OS）仓库，用来公开/备份 `myskill`、`myloop`、`my知识库` 三层体系的架构和通用流程。
 
 ## 上传范围
